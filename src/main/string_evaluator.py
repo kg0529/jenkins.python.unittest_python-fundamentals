@@ -17,7 +17,14 @@ class StringManipulator(object):
         # TODO - Implement solution
 
     def compare(self, first_value, second_value):
-        return None
+        if first_value == None or False:
+            first_value = 0
+            return first_value == second_value
+        elif first_value == True:
+            first_value = 1
+            return first_value == second_value
+        else:
+            return first_value == second_value
         # TODO - Implement solution
 
     def get_middle_character(self, string_to_fetch_from):

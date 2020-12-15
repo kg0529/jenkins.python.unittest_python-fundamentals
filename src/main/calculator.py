@@ -10,4 +10,7 @@ class Calculator(object):
         return a * b # TODO - Implement solution
 
     def divide(self, a, b):
-        return round(a / b, 3) # TODO - Implement solution
+        if b == 0:
+            return ZeroDivisionError
+        else:
+            return round(a / b, 3) # TODO - Implement solution
